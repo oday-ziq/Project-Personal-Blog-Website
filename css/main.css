@@ -1,66 +1,11 @@
+@import url("core.css");
 @import url("home.css");
 @import url("post.css");
+@import url("responsive.css");
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
     font-family: Arial, sans-serif;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
-    background-color: #fff;
-}
-
-.blog-title {
-    font-family: 'Lora', serif; 
-    font-size: 2.5em; 
-    text-align: center;
-    color: #333;
-    text-decoration: underline; 
-}
-
-.subscribe {
-    font-family: 'Roboto', sans-serif;
-    color: #6c757d; 
-    font-size: 1em;
-    text-decoration: underline; 
-    font-weight: bold;
-}
-
-.search-icon {
-    text-decoration: none;
-    color: #333;
-    font-size: 1.5em;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
+    line-height: 1.6;
     background-color: #f8f9fa;
-    font-size: 0.9em;
-    color: #6c757d; 
-}
-
-footer a {
-    color: #007bff;
-    text-decoration: underline;
-}
-
-footer a:hover {
-    text-decoration: none;
-}
-
-.blue-link {
-    color: #007bff;
-    text-decoration: underline;
-}
-
-.blue-link:hover {
-    text-decoration: none;
+    color: #333;
 }
