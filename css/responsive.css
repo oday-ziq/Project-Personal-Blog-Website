@@ -1,4 +1,22 @@
+@media (min-width: 769px) {
+    .blog-grid {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
+    .sidebar {
+        display: block;
+    }
+}    
 @media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .navbar-links a {
+        margin: 0 10px;
+    }
     .blog-grid {
         grid-template-columns: 1fr;
         gap: 15px;
@@ -8,15 +26,75 @@
     .card {
         padding: 15px;
     }
+    .sidebar {
+        width: 100%;
+        padding: 15px;
+    }
+
+    footer {
+        padding: 15px;
+    }
 }
 
 @media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+    }
+    .navbar-links {
+        margin-top: 10px;
+    }
+    .navbar-links a {
+        margin: 5px 0;
+    }
     .blog-grid {
         padding: 10px;
+        grid-template-columns: 1fr;
+        gap: 10px;
     }
-
     .card {
         padding: 10px;
         font-size: 0.9em;
+    }
+    .card h2 {
+        font-size: 1.2em;
+    }
+
+    .card p {
+        margin-bottom: 10px;
+    }
+
+    .read-more {
+        font-size: 0.9em;
+    }
+    .sidebar {
+        display: none;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+    footer a {
+        margin: 5px 0; 
+    }
+
+    .author-info {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .author-info .avatar {
+        margin-bottom: 10px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .social-sharing a {
+        margin: 0 5px; 
     }
 }

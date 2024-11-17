@@ -219,11 +219,12 @@ ul, ol {
 }
 
 footer {
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
     padding: 20px;
     background-color: #f8f9fa;
-    font-size: 0.9em;
-    color: #6c757d;
+    text-align: center;
 }
 
 footer a {
